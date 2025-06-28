@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Boutique Girl</title>
+  <link rel="stylesheet" href="style.css" />
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Boutique Girl</div>
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class=" flex items-center justify-center" id="navbar-links">
+      <div class="text-[#b30059] flex gap-5 navbar-links w-[29rem]"><a href="#beranda" >Beranda</a>
+      <a href="#produk">Produk</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#testimoni">Testimoni</a>
+      <a href="#kontak">Kontak</a></div>
+      <a href="#kontak" class="cta-button text-white w-[10rem] h-10 flex items-center justify-center  rounded-[10rem] bg-[#b30059]">Pesan Sekarang</a>
+    </div>
+  </nav>
+
+  <!-- Sections with images.jpg -->
+
+  <section id="beranda" class="flex justify-center items-center gap-5">
+    <div class="text-xl">
+      <h2 class="font-bold">Selamat Datang di Boutique Girl</h2>
+    <p >Kami adalah spesialis dalam menjahit pakaian wanita, kebaya, seragam, dan gaun pesta dengan kualitas tinggi dan harga terjangkau. Percayakan gaya Anda kepada kami.</p>
+    </div>
+    
+    <div class="beranda"></div>
+    <img src="./tokojahit2.jpg" alt="Toko Jahit"  class="w-[15rem]"/>
+    </div>
+  </section>
+
+  <section id="produk">
+    <h2 class="font-bold">Produk Kami</h2>
+    <p>Berbagai macam jahitan seperti gaun pesta, kebaya modern, busana muslim, dan seragam kerja dikerjakan dengan detail dan cinta.</p>
+    <div class="flex h-[25rem]  gap-2 justify-center">
+      <img src="https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,f_auto,q_auto:best,w_640/v1634025439/01jpm6vzf5gtqrqdryjj1rqdpk.jpg" alt="Produk Jahitan" class="object-cover"/>
+    <img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2022/12/30/c050429d-72c7-40c8-8105-0c8e351bf6d6.jpg" alt="Produk Jahitan" class="object-cover" />
+    </div>
+    
+  </section>
+<!-- Layanan -->
+<section class="services" id="layanan">
+  <div class="container ">
+    <h2>Layanan Kami</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Jahit Custom</h3>
+        <p>Kami menerima jahitan pakaian wanita dan anak-anak sesuai permintaan, baik untuk kebutuhan sehari-hari, acara formal, hingga desain khusus.</p>
+      </div>
+      <div class="card">
+        <h3>Modifikasi Pakaian</h3>
+        <p>Ubah gaya, ukuran, atau detail pakaian lama Anda agar tampil seperti baru.</p>
+      </div>
+      <div class="card">
+        <h3>Pemasangan Payet</h3>
+        <p>Tambahkan kesan mewah dan elegan pada kebaya atau gaun Anda dengan layanan pemasangan payet yang rapi dan detail.</p>
+      </div>
+      <div class="card">
+        <h3>Permak Baju</h3>
+        <p>Solusi tepat untuk menyesuaikan ukuran atau memperbaiki pakaian favorit Anda agar kembali pas dan nyaman dikenakan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="galeri">
+    <h2 class="font-bold">Galeri Hasil Jahitan</h2>
+    <p>Beberapa hasil karya kami yang telah memuaskan banyak pelanggan:</p>
+    <div class="gallery">
+      <img src="./ati.jpg" alt="Gaun 1" />
+      <img src="./alfi2.jpg" alt="Gaun 2" />
+      <img src="./alfi4.jpg" alt="Gaun 3" />
+      <img src="./muni.jpg" alt="Gaun 4" />
+      <img src="./alfi3.jpg" alt="Gaun 5" />
+      <img src="./ati2.jpg" alt="Gaun 6" />
+      <img src="./me.jpg" alt="Gaun 7" />
+      <img src="./dian.jpg" alt="Gaun 8" />
+      <!-- Tambahkan sebanyak yang Anda mau -->
+    </div>
+  </section>
+  
+
+  <section id="testimoni">
+    <h2 class="font-bold">Testimoni Pelanggan</h2>
+    <div class="testimoni-gallery">
+      <img src="./testi.jpg" alt="Testimoni 1" />
+      <img src="./testi2.jpg" alt="Testimoni 2" />
+      <img src="./testi3.jpg" alt="Testimoni 3" />
+    </div>
+  </section>
+  
+  
+  <section id="kontak">
+    <h2 class="font-bold">Kontak Kami</h2>
+    <p>Alamat: Jl. Melati No. 45, Bandung<br/>
+       Telepon: 0812-3456-7890<br/>
+       WhatsApp: 0812-3456-7890<br/>
+       Instagram: @tokojahitmawar</p>
+    
+  </section>
+
+  <footer>
+    &copy; 2025 Toko Boutique Girl . All rights reserved.
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('navbar-links');
+
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+</body>
